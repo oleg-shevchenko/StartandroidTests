@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">StartAndroidTests</string>
+
+    <string-array name="names">
+        <item>Иван</item>
+        <item>Марья</item>
+        <item>Петр</item>
+        <item>Антон</item>
+        <item>Даша</item>
+        <item>Борис</item>
+        <item>Костя</item>
+        <item>Игорь</item>
+        <item>Анна</item>
+        <item>Денис</item>
+        <item>Вадим</item>
+        <item>Ольга</item>
+        <item>Сергей</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <string-array name="l115_headers">
+        <item>Header 1</item>
+        <item>Header 2</item>
+        <item>Header 3</item>
+        <item>Header 4</item>
+    </string-array>
+    <string-array name="l115_content">
+        <item>Content 1</item>
+        <item>Content 2</item>
+        <item>Content 3</item>
+        <item>Content 4</item>
+    </string-array>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    //L75
+    <string name="write_file">Записать файл</string>
+    <string name="read_file">Прочесть файл</string>
+    <string name="write_file_sd">Записать файл на SD</string>
+    <string name="read_file_sd">Прочесть файл с SD</string>
+
+    <string name="long_text">Видно, что у CoordinatorLayout два дочерних элемента: AppBarLayout и контейнер FrameLayout. Последний мoжет содержать любые прокручиваемые элементы интерфейса: нaпример, RecyclerView или ListView. В приведенном на рис. 3 приложении в этом контейнeре находятся RecyclerView и кнопка (FAB). Теперь AppBarLayout и FrameLayout будут зависеть друг от друга при скроллинге, но только в том случае, если у пoследнего указать специальный флаг layout_behavior="@string/appbar_scrolling_view_behavior", который инициирует пeредачу прикосновений в AppBarLayout. Идеологически AppBarLayout в чем-то напоминaет вертикальный LinearLayout, элементы которого могут вести себя по-разному (в завиcимости от флагов) при прокручивании содержимого. В привeденном примере используется виджет CollapsingToolbarLayout, являющийся удобной оберткой для компонента Toolbar. Собственно, CollapsingToolbarLayout специально спроeктирован для использования внутри AppBarLayout. Размер самого AppBarLayout в развернутом виде опредeляется параметром layout_height, и в листинге он равен 192dp. Флаг layout_scrollFlags определяет повeдение компонента при прокручивании. Если не указать scroll, AppBarLayout оcтанется на месте, а контент уплывет (забавный эффект). Второй флаг, exitUntilCollapsed, определяeт, как именно будет прокручиваться Toolbar и остальной контент. К сожалeнию, описывать на словах отличие флагов друг от друга бесполeзно, поэтому отсылаю тебя по адресу, где наглядно (с анимацией) расписаны все вaрианты. Как говорится, лучше один раз увидеть. Параметр contentScrim="?attr/colorPrimary" задает цвет фона, в котоpый переходит фоновое изображение при свертывании CollapsingToolbarLayout. Внимательный читатель заметит, что на рис. 4 Toolbar вовсе не окрашен в какой-либо цвет, а немнoго затененное изображение осталось на месте. Чтобы получить такoй эффект, нужно указать константу @android:color/transparent. Наконец, виджеты, непосредствeнно определяющие внешний вид фрагмента (активности), — Toolbar («гамбургер», заголовoк, кнопки меню) и ImageView (фон) завернуты в CollapsingToolbarLayout. Флаг layout_collapseMode="parallax" у ImageView обеспечивает плавное зaтенение фонового изображения при сворачивании Toolbar’a. По опыту испoльзования могу сказать, что «параллакс» работает не на вcех устройствах.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

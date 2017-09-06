@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    tools:context=".view.MainNavigationDrawerActivity">
+
+    <!--************************************************************Bottom sheet**********************************************************************-->
+    <!--bottom sheet - подключение нижнего экрана с помощью тега app:layout_behavior="@string/bottom_sheet_behavior"
+    Вставляется прямо в CoordinatorLayout
+    behavior_peekHeight: Определяет высоту свернутой (постоянной) видимой части (можно скрыть свайпом, если установлено behavior_hideable),
+        если не установлено, то видно будет сразу весь
+        если 0, то будет полностью скрываться, т.е. без постоянно видимой части
+    behavior_hideable: Определяет, может ли нижний экран полностью скрываться свайпом вниз.
+    -->
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/rectangle_alpha"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Bottom Sheet Peek"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.9"
+            android:src="@drawable/nature">
+        </ImageView>
+    </LinearLayout>
+
+    <!--Кнопка, которая будет показывать и сворачивать Bottom sheet. Привяжем к верхнему правому краю нашего Bottom sheet, чтобы они двигались вместе-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/ic_airport"
+        app:layout_anchor="@id/bottom_sheet"
+        app:layout_anchorGravity="top|right|end"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/rectangle_l57" />
+    <item android:drawable="@drawable/google_drive_icon" />
+</transition>
+<!--A TransitionDrawable is a drawable object that can cross-fade between the two drawable resources.
+Each drawable is represented by an <item> element inside a single <transition> element. No more than two items are supported.
+To transition forward, call startTransition(). To transition backward, call reverseTransition().-->

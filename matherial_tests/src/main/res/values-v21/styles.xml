@@ -1,0 +1,11 @@
+<resources>
+    <!--Фокус в том, что на самом деле status bar в Lollipop может быть только полностью прозрачным.
+    Соответственно, мы должны сделать его именно таким (внутри values-v21):-->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Указываем на своё желание рисовать системные панели -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- Ставим прозрачный цвет -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

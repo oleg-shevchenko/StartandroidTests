@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Здесь указываем атрибуты в XML, которые будем передавать в Behavior-->
+<resources>
+    <declare-styleable name="FabScrollBehavior">
+        <attr name="animTime" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_coord1"
+            android:icon="@drawable/ic_favorite"
+            android:title="Coordinator Layout 1"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_bottom_sheet"
+            android:icon="@drawable/ic_favorite"
+            android:title="Bottom Sheet" />
+        <item
+            android:id="@+id/nav_modal_bottom_sheet"
+            android:icon="@drawable/ic_favorite"
+            android:title="Modal Bottom Sheet" />
+        <item
+            android:id="@+id/nav_card_swipe_behavior"
+            android:icon="@drawable/ic_favorite"
+            android:title="SwipeBehavior and CardView" />
+        <item
+            android:id="@+id/nav_custom_behavior"
+            android:icon="@drawable/ic_favorite"
+            android:title="Custom Behavior" />
+        <item
+            android:id="@+id/nav_tablayout"
+            android:icon="@drawable/ic_favorite"
+            android:title="TabLayout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_favorite"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_favorite"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

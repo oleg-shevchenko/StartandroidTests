@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Список без выбора">
+        </TextView>
+        <ListView
+            android:id="@+id/lvMain1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+        </ListView>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Список с одиночным выбором">
+        </TextView>
+        <Button
+            android:id="@+id/btnChecked2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get checked item">
+        </Button>
+        <ListView
+            android:id="@+id/lvMain2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+        </ListView>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Список с множественным выбором">
+        </TextView>
+        <Button
+            android:id="@+id/btnChecked3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get checked items">
+        </Button>
+        <ListView
+            android:id="@+id/lvMain3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+        </ListView>
+    </LinearLayout>
+
+

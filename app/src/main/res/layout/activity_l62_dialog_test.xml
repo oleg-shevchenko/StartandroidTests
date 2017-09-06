@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/l62_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time dialog"/>
+
+    <TextView
+        android:id="@+id/tvAlert1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert dialog 1"/>
+
+    <TextView
+        android:id="@+id/tvCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom dialog"/>
+
+    <TextView
+        android:id="@+id/tvCustomDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom date dialog"/>
+
+    <TextView
+        android:id="@+id/tvProgressCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress dialog circle"/>
+
+    <TextView
+        android:id="@+id/tvProgressHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress dialog horizontal"/>
+</LinearLayout>

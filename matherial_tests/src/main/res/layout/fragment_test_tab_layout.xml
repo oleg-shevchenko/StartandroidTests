@@ -1,0 +1,39 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main.toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+        <!--Tablayout обеспечивает горизонтальное расположение для отображения вкладок,
+        которые позволяют переключаться между различными фрагментами.
+        app:tabGravity="fill" - растянуть вкладки на весь экран (center - будут сжаты и в центре если fixed)
+        app:tabMode="fixed" - зафиксированы (если scrollable, то tabGravity по ходу не работает, и вкладки сжаты вправо с возможностью прокрутки)-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+    </android.support.design.widget.AppBarLayout>
+
+    <!--ViewPager позволяет нам организовать удобный и красивый просмотр данных с возможностью перелистывания влево-вправо.
+    Сам ViewPager отвечает за показ и прокрутку. Но ему нужен еще PagerAdapter, который отвечает за предоставление данных.
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" - чтобы не залезало под тулбар-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

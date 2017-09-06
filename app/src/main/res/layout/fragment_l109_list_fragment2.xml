@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Если же вас чем-то не устраивает дефолтный список, можно использовать свой layout-файл для фрагмента.-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--Первый TextView – просто заголовок списка.-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number list">
+    </TextView>
+    <!--Далее идет ListView. Его ID обязательно должен быть равен @id/android:list. Чтобы ListFragment сам его нашел и мог с ним работать.-->
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <!--Второй TextView – будет показан, если нет данных для списка. Его ID обязательно должен быть равен @id/android:empty.
+    Причем, это вовсе не обязательно должен быть TextView. Главное тут именно этот ID. Компонент с этим ID будет показан вместо ListView, если нет данных.-->
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="List empty">
+    </TextView>
+</LinearLayout>

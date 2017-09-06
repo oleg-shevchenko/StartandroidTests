@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oleg.startandroidtests">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/CustomTheme">
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+
+                <!--
+                android.intent.action.MAIN показывает системе, что Activity является основной и будет первой отображаться при запуске приложения.
+                А android.intent.category.LAUNCHER означает, что приложение будет отображено в общем списке приложений Android.
+                -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        Пример интент-фильтра
+        <activity android:name="ShareActivity">
+            <This activity handles "SEND" actions with text data
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                Объявляет тип принимаемых данных, для чего используется один или несколько атрибутов,
+                указывающих различные составные части URI данных (scheme, host, port, path и т. д.) и тип MIME.
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            This activity also handles "SEND" and "SEND_MULTIPLE" with media data
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.google.panorama360+jpg"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        -->
+
+        <activity android:name=".view.L14MenuActivityCode" />
+        <activity android:name=".view.L14MenuActivityXML" />
+        <activity android:name=".view.SnackbarTestActivity" />
+        <activity android:name=".view.L15ContextMenuActivity" />
+        <activity android:name=".view.L16ProgramLayoutActivity" />
+        <activity android:name=".view.L17ProgramViewComponents" />
+        <activity android:name=".view.L18SeekbarAndLayoutParamsActivity" />
+        <activity android:name=".view.L20_Animation_Activity" />
+        <activity android:name=".view.TestActivity" />
+
+        <!-- android:label="L26 Time" - необязательно, имя отображаемое в списке, при нахождении нескольких подходящих интенту активити -->
+        <activity
+            android:name=".view.L26IntentFilterTimeActivity"
+            android:label="L26 Only Time">
+            <intent-filter>
+
+                <!-- Объявляет принимаемое действие, заданное в объекте Intent, в атрибуте name. -->
+                <action android:name="com.example.oleg.action.showtime" />
+                <!-- Для получения неявных объектов Intent ОБЯЗАТЕЛЬНО необходимо включить категорию CATEGORY_DEFAULT в фильтр Intent. -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.L26IntentFilterDateTimeActivity"
+            android:label="L26 Date and Time">
+            <intent-filter>
+                <action android:name="com.example.oleg.action.showtime" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.IntentTests" />
+        <activity android:name=".view.IntentTestActivityForResult" />
+        <activity
+            android:name=".view.MyWebBrowserActivity"
+            android:label="MyWebBrowser"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.L34SqlTetsActivity" />
+        <activity
+            android:name=".view.L36SqlTestActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".view.L37SqlRawQueryAndInnerJoinActivity" />
+        <activity android:name=".view.L40LayoutInflaterActivity" />
+        <activity android:name=".view.L42ListViewActivity" />
+        <activity android:name=".view.L45ExpandableListViewActivity" />
+        <activity android:name=".view.L48SimpleAdapterActivity" />
+        <activity
+            android:name=".view.TestLoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".view.L53SimpleCursorTreeAdapterActivity" />
+        <activity android:name=".view.L54CustomAdapter" />
+        <activity android:name=".view.L56SpinnerTest" />
+        <activity android:name=".view.L57GridView" />
+        <activity android:name=".view.TestDrawables" />
+        <activity android:name=".view.L59DialogTestActivity" />
+        <activity android:name=".view.OnL62DialogTestActivity" />
+        <activity android:name=".view.L70onSaveInstanceStateTest" />
+        <activity
+            android:name=".view.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".view.L71PreferencesActivity"
+            android:label="Prefences" />
+        <activity
+            android:name=".view.L71MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".view.L75FileReadWrite"
+            android:label="File Read and Write" />
+        <activity
+            android:name=".view.L180ConstraintLayout"
+            android:parentActivityName=".view.L92ServiceActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.L92ServiceActivity" />
+        </activity>
+        <activity
+            android:name=".view.TestCoordinatorLayout"
+            android:label="Test CoordinatorLayout"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".view.L76TabActivity" />
+        <activity android:name=".view.L77ActivityAsTab" />
+        <activity android:name=".view.L80HandlerActivity" />
+        <activity android:name=".view.L86AsyncTask1" />
+        <activity android:name=".view.L87AsyncTask2" />
+        <activity android:name=".view.L135LoaderActivity" />
+        <activity android:name=".view.L136CursorLoaderActivity" />
+        <activity android:name=".view.AppListLoaderActivity" />
+        <activity android:name=".view.L92ServiceActivity" />
+
+        <service
+            android:name=".services.L92Service"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.L93Service"
+            android:enabled="true"
+            android:exported="false" />
+        <!--
+        Этот сервис будем запускать в отдельном процессе
+        !!!Для того, чтобы интент нашел сервис, action не должен совпадать с путем файла сервиса
+        Рекомендуется не использовать этот способ, а создавать явное намерение, т.е. указывать конкретный класс, а не интент-фильтр для сервисов
+        -->
+        <service
+            android:name=".services.L94Service"
+            android:process=":my_l94_service_process">
+            <intent-filter>
+                <action android:name="action_L94Service" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".view.L95ServicePendingIntentActivity" />
+
+        <service
+            android:name=".services.L95Service"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".view.L96ServiceBroadcastReciverActivity" />
+
+        <service
+            android:name=".services.L96Service"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".view.L97ServiceBindActivity" />
+
+        <service
+            android:name=".services.L97Service"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="action_L97Service" />
+            </intent-filter>
+        </service>
+
+        <!-- Активити будет в одном экземпляре, чтобы не открывать дубли при нажатии на уведомление -->
+        <activity
+            android:name=".view.L99ServiceAndNotificationsActivity"
+            android:launchMode="singleInstance" />
+
+        <service
+            android:name=".services.L99Service"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":l99_service_process" />
+        <service
+            android:name=".services.L100IntentService"
+            android:exported="false" />
+
+        <activity android:name=".view.TestNotificationsActivity" />
+        <activity android:name=".view.L101ContentProviderActivity" />
+
+        <provider
+            android:name=".contentprovider.MyContactsProvider"
+            android:authorities="com.example.oleg.startandroidtests.contentprovider.AdressBook" />
+
+        <activity android:name=".view.L102TouchActivity" />
+        <activity android:name=".view.L103MultitouchActivity" />
+        <activity
+            android:name=".view.L104FragmentLifecycleActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.L105ChangeFragmentActivity" />
+        <activity android:name=".view.L106FragmentAccessActivity" />
+        <activity android:name=".view.L109ListFragmentActivity" />
+        <activity
+            android:name=".view.L113ActionModeActivity"
+            android:theme="@style/L113Theme" />
+        <activity
+            android:name=".view.L113ActionModeListActivity"
+            android:theme="@style/L113Theme" />
+        <activity android:name=".view.L115DifferentScreenActivity"></activity>
+    </application>
+
+</manifest>

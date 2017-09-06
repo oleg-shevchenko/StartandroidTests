@@ -1,0 +1,33 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardBackgroundColor="@color/colorAccent"
+        card_view:contentPadding="16dp">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Продолжим углубление в код, если вы посмотрите внутрь пакета виджетов design support library, то сможете найти открытй клас под названием: SwipeDismissBehavior. С этим новым Behavior мы можем очень легко реализовать функцию свайп для отмены в наших шаблонах с CoordinatorLayout"
+            android:gravity="top" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SWIPE TO DISMISS"
+            android:gravity="bottom|end"
+            android:textSize="24sp" />
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

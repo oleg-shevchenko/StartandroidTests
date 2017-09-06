@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--https://developer.android.com/training/appbar/action-views.html-->
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/zoom">
+    </item>
+
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/ball_football"
+        android:title="edit">
+    </item>
+    <item
+        android:id="@+id/menu_delete"
+        android:orderInCategory="3"
+        android:checkable="true"
+        android:title="delete">
+    </item>
+    <group
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/menu_copy"
+            android:orderInCategory="1"
+            android:enabled="false"
+            android:title="copy">
+        </item>
+        <item
+            android:id="@+id/menu_paste"
+            android:orderInCategory="2"
+            android:title="paste">
+        </item>
+        <item
+            android:id="@+id/menu_exit"
+            android:orderInCategory="4"
+            android:title="exit">
+        </item>
+    </group>
+
+    <item android:id="@+id/submenu"
+        android:title="submenu"
+        android:titleCondensed="smenu"
+        app:showAsAction="ifRoom|withText" >
+        <menu>
+            <item android:id="@+id/submenu_item1"
+                android:title="submenu item" />
+        </menu>
+    </item>
+</menu>
+
+
+<!--OTHER OPTIONS https://developer.android.com/guide/topics/resources/menu-resource.html
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@[+][package:]id/resource_name"
+        android:title="string"
+        android:titleCondensed="string"
+        android:icon="@[package:]drawable/drawable_resource_name"
+        android:onClick="method name"
+        android:showAsAction=["ifRoom" | "never" | "withText" | "always" | "collapseActionView"]
+        android:actionLayout="@[package:]layout/layout_resource_name"
+        android:actionViewClass="class name"
+        android:actionProviderClass="class name"
+        android:alphabeticShortcut="string"
+        android:alphabeticModifiers=["META" | "CTRL" | "ALT" | "SHIFT" | "SYM" | "FUNCTION"]
+        android:numericShortcut="string"
+        android:numericModifiers=["META" | "CTRL" | "ALT" | "SHIFT" | "SYM" | "FUNCTION"]
+        android:checkable=["true" | "false"]
+        android:visible=["true" | "false"]
+        android:enabled=["true" | "false"]
+        android:menuCategory=["container" | "system" | "secondary" | "alternative"]
+        android:orderInCategory="integer" />
+
+    <group android:id="@[+][package:]id/resource name"
+        android:checkableBehavior=["none" | "all" | "single"]
+        android:visible=["true" | "false"]
+        android:enabled=["true" | "false"]
+        android:menuCategory=["container" | "system" | "secondary" | "alternative"]
+        android:orderInCategory="integer" >
+        <item />
+    </group>
+    <item >
+        <menu>
+            <item />
+        </menu>
+    </item>
+</menu>
+-->

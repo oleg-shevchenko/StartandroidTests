@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!--TabHost – корневой элемент вкладок. В нем вертикальный LinearLayout, в котором расположены TabWidget и FrameLayout.
+    !!!!! Здесь и далее используем @android:id иначе TabHost будет ругаться, что не может их найти-->
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Для примера TabWidget расположен внизу, чтобы это работало нужно указать также android:layout_weight
+            Если сначала TabWidget потом FrameLayout то вес указывать не нужно-->
+
+            <!--В этом FrameLayout мы размещаем все View-компоненты, которые хотим отображать на вкладках (здесь просто TextView, но в реале ViewGroup)
+            Позже мы (в коде) сообщим вкладке, какой именно компонент она должна показать (явно укажем id),
+            вкладка выберет из этой общей кучи нужный ей компонент и отобразит его, как свое содержимое.-->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tvTab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Это первая вкладка">
+                </TextView>
+                <TextView
+                    android:id="@+id/tvTab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Это вторая вкладка">
+                </TextView>
+                <TextView
+                    android:id="@+id/tvTab3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Это третья вкладка">
+                </TextView>
+            </FrameLayout>
+
+            <!--TabWidget будет отображать заголовки вкладок-->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+            </TabWidget>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

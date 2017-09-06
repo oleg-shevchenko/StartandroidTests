@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oleg.startandroidtests.view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvWebBrowser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="OpenWebBrowser"/>
+
+        <TextView
+            android:id="@+id/tvMainL14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Menu test (L14)"/>
+
+        <TextView
+            android:id="@+id/tvMainL14xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Menu test XML (L14)"/>
+
+        <TextView
+            android:id="@+id/tvMainSnackbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Snackbar Test"/>
+
+        <TextView
+            android:id="@+id/tvMainContextMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Context Menu Test"/>
+
+        <TextView
+            android:id="@+id/tvMainProgLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Программное создание экрана"/>
+
+        <TextView
+            android:id="@+id/tvMainProgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Создание View в приложении"/>
+
+        <TextView
+            android:id="@+id/tvMainSeekLayParams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Seekbar and LayoutParams"/>
+
+        <TextView
+            android:id="@+id/tvMainAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Анимация (L20)"/>
+
+        <TextView
+            android:id="@+id/tvMainTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent filter: Time"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainIntentTests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Intent Tests"/>
+
+        <TextView
+            android:id="@+id/tvMainSQLiteTest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="SQLite Test 1"/>
+
+        <TextView
+            android:id="@+id/tvMainSQLiteTest2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="SQLite Test 2"/>
+
+        <TextView
+            android:id="@+id/tvMainSQLiteTest3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="SQLite Test InnerJoin and rawQuery"/>
+
+        <TextView
+            android:id="@+id/tvMainLayoutInflater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test LayoutInflater"/>
+
+        <TextView
+            android:id="@+id/tvMainListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test ListView"/>
+
+        <TextView
+            android:id="@+id/tvMainExListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test ExpandableListView"/>
+
+        <TextView
+            android:id="@+id/tvMainSimpleAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test SimpleAdapter"/>
+
+        <TextView
+            android:id="@+id/tvMainSimpleCursorTreeAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test SimpleCursorTreeAdapter"/>
+
+        <TextView
+            android:id="@+id/tvMainCustomAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test CustomAdapter"/>
+
+        <TextView
+            android:id="@+id/tvMainSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test Spinner"/>
+
+        <TextView
+            android:id="@+id/tvMainGridView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test GridView"/>
+
+        <TextView
+            android:id="@+id/tvMainDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test Drawable"/>
+
+        <TextView
+            android:id="@+id/tvMainDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test Dialogs Deprecated"/>
+
+        <TextView
+            android:id="@+id/tvMainDialogNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test Dialogs"/>
+
+        <TextView
+            android:id="@+id/tvMainSaveInstanceState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test onSaveInstanceState()"/>
+
+        <TextView
+            android:id="@+id/tvMainSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test Settings Generated"/>
+
+        <TextView
+            android:id="@+id/tvMainSettings1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test Settings My"/>
+
+        <TextView
+            android:id="@+id/tvMainFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="Test file read-write"/>
+
+        <TextView
+            android:id="@+id/tvMainConstraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test ConstraintLayout"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainCoordinatorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test CoordinatorLayout"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Tabs"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainHandler1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Handler"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainAsyncTask1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test AsyncTask 1"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainAsyncTask2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test AsyncTask 2"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Loader, LoaderManager"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainCursorLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test CursorLoader"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainAppList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Loader. Applications list"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainService1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainService2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service. Обратная связь с помощью PendingIntent"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainService3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service. Связь с помощью BroadcastReceiver"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainService4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service. Биндинг. ServiceConnection"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainService5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service и Уведомления"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Еще одиен тест Notifications"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainContentProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test ContentProvider"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainTouch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Touch"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainMultiTouch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Multi Touch"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainFragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment Lifecycle."
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainFragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dynamic fragment change. Back stack."
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainFragment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment and Activity"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainFragment4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListFragment"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action Mode 1"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainActionMode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action Mode in ListView"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainDiffScreens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Different screens"
+            android:textAppearance="@style/MainTextStyle" />
+
+        <TextView
+            android:id="@+id/tvMainTEST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="TEST"/>
+
+        <TextView
+            android:id="@+id/tvMainLoginTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MainTextStyle"
+            android:text="TEST LOGIN"/>
+
+    </LinearLayout>
+</ScrollView>
